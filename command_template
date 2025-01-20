@@ -1,0 +1,2 @@
+python main.py --projection 2d --function ackley,sphere,rastrigin --dim 2
+python main.py --projection 2d --function sphere,ackley,bukin_function_n6,eggholder_function,himmelblau,rastrigin,rosenbrock,schwefel_function,sphere --dim 2
