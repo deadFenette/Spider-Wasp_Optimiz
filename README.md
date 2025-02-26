@@ -68,6 +68,7 @@ The SWO Optimizer features a modern graphical interface for interactive optimiza
 - 📋 **Results Table** - Sortable table with optimal values/solutions
 - ⚡ **Progress Feedback** - Status bar with operation updates
 - 🔄 **Session Persistence** - Remembers last used settings
+- 📥 Import results - Ability to provide the result in the .CSV format
 
 ### Usage
 
