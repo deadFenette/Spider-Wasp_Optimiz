@@ -9,6 +9,7 @@ This project implements the Spider Wasp Optimizer (SWO) algorithm in Python and 
 - [Project Structure](#project-structure)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Graphical User Interface (GUI)](#graphical-user-interface-gui)
 - [Test Functions](#test-functions)
 - [Results](#results)
 - [Contributing](#contributing)
@@ -23,6 +24,7 @@ This project implements the Spider Wasp Optimizer (SWO) algorithm in Python and 
 - `utils`: Contains utility functions.
 - `main.py`: The entry point of the project.
 - `requirements.txt`: List of dependencies.
+- `gui.py`: Graphical user interface entry point.
 - `report`: Directory for the project report.
 
 ## Installation
@@ -50,6 +52,57 @@ python main.py --projection <projection> --function <function_name> --dim <dimen
   Select the test function.  
 - `--dim`:  
   Dimension of the test function.
+
+## Graphical User Interface (GUI)
+
+![SWO GUI Interface](images/gui_screenshot.png)
+
+The SWO Optimizer features a modern graphical interface for interactive optimization workflows.
+
+### Key Features
+
+- 🌓 **Theme Support** - Toggle between light/dark modes
+- 📊 **Multi-Function Optimization** - Select multiple test functions simultaneously
+- 🎚️ **Dimension Control** - Choose problem dimensionality (2D-4D)
+- 📈 **Real-Time Visualization** - Live convergence curve plotting
+- 📋 **Results Table** - Sortable table with optimal values/solutions
+- ⚡ **Progress Feedback** - Status bar with operation updates
+- 🔄 **Session Persistence** - Remembers last used settings
+
+### Usage
+
+### Usage
+
+1. Launch the GUI:
+```bash
+python gui.py
+```
+
+**Interface workflow:**
+
+- Check desired test functions in left panel
+- Select dimension from dropdown (2-4)
+- Click ▶️ Start Optimization
+- View convergence plots in upper panel
+- Inspect numerical results in table below
+- Toggle theme using the 🌞/🌙 icon in top-right corner
+
+**Interface Elements**
+
+| Panel          | Components                                      |
+|----------------|-------------------------------------------------|
+| Left Sidebar   | Function selection, dimension control, run button |
+| Main Area      | Convergence plot (top), results table (bottom)   |
+| Toolbar        | Theme toggle, status indicators                  |
+
+**Technical Notes**
+
+- Settings automatically saved in QSettings registry
+- Tooltips available for all interactive elements
+- Requires PyQt5 and pyqtgraph dependencies
+- Compatible with Windows/Linux/macOS
+- Optimal resolution: 1280×800 or higher
+
 ## Example
 
 To run the SWO algorithm on the Eggholder function with a 3D projection, use the following command:
