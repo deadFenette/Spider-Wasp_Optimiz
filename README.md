@@ -106,10 +106,10 @@ python gui.py
 
 ## Example
 
-To run the SWO algorithm on the Eggholder function with a 3D projection, use the following command:
+To run the SWO algorithm on the Eggholder function with a 2D projection, use the following command:
 
 ```bash
-python main.py --projection 3d --function eggholder_function --dim 2
+python main.py --projection 2d --function eggholder_function --dim 2
 ```
 
 This command will execute the SWO algorithm on the Eggholder function and generate a 3D plot of the function along with the convergence plot.
